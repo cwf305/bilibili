@@ -1,0 +1,151 @@
+@import "./base.less";
+
+@rootsize: 3.75vw;
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+    height: (84 / @rootsize);
+    border-bottom: #eee (1 / @rootsize) solid;
+    .top {
+        display: flex;
+        justify-content: space-between;
+        padding: (5 / @rootsize) (15 / @rootsize);
+        .left {
+            .logo {
+                margin-top: (5 / @rootsize);
+                width: (61 / @rootsize);
+                height: (29 / @rootsize);
+                background-color: skyblue;
+            }
+        }
+        .right {
+            display: flex;
+            align-items: center;
+            .one {
+                i {
+                    line-height: (35 / @rootsize);
+                    font-size: (23 / @rootsize);
+                    color: #999;
+                }
+            }
+            .two {
+                margin-left: (25 / @rootsize);
+                img {
+                    margin-top: (6 / @rootsize);
+                    width: (24 / @rootsize);
+                    height: (24 / @rootsize);
+                }
+            }
+            .three {
+                margin-left: (25 / @rootsize);
+                img {
+                    margin-top: (6 / @rootsize);
+                    width: (72 / @rootsize);
+                    height: (24 / @rootsize);
+                }
+            }
+        }
+    }
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        ul {
+            display: flex;
+            li {
+                width: (65 / @rootsize);
+                height: (38 / @rootsize);
+                padding: 0 (16 / @rootsize);
+                font-size: (14 / @rootsize);
+                text-align: center;
+                a {
+                    height: (38 / @rootsize);
+                    color: #333;
+                    display: block;
+                    line-height: (38 / @rootsize);
+                    &.pink {
+                        color: #fb7299;
+                        border-bottom: #fb7299 (2 / @rootsize) solid;
+                    }
+                }
+            }
+        }
+        .more {
+            width: (40 / @rootsize);
+            height: (40 / @rootsize);
+            text-align: center;
+            line-height: (40 / @rootsize);
+            margin-right: (5 / @rootsize);
+            i {
+                font-size: (22 / @rootsize);
+                font-weight: 700;
+                color: #ccc;
+            }
+        }
+    }
+}
+// 视频
+section {
+    padding: (84 / @rootsize) (5 / @rootsize) 0;
+    .list1 {
+        display: flex;
+        flex-wrap: wrap;
+        a {
+            width: 50%;
+            padding: (8 / @rootsize) (5 / @rootsize);
+            font-size: (12 / @rootsize);
+            color: #333;
+            .txt {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                margin-top: (5 / @rootsize);
+            }
+            .pic {
+                position: relative;
+                .count {
+                    display: flex;
+                    justify-content: space-between;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    padding: (8 / @rootsize);
+                    p {
+                        color: #fff;
+                        i {
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// 底部
+.dibu {
+    position: relative;
+    width: 100%;
+    .pinkbox {
+        position: fixed;
+        left: 0;
+        bottom: (30 / @rootsize);
+        width: 95%;
+        height: (30 / @rootsize);
+        background-color: #fb7299;
+        border-radius: (15 / @rootsize);
+        margin-left: (10 / @rootsize);
+        text-align: center;
+        line-height: (30 / @rootsize);
+        a {
+            color: #fff;
+            font-size: (14 / @rootsize);
+        }
+    }
+}

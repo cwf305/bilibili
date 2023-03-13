@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+ul {
+  list-style: none;
+}
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+  height: 22.4vw;
+  border-bottom: #eee 0.26666667vw solid;
+}
+header .top {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.33333333vw 4vw;
+}
+header .top .left .logo {
+  margin-top: 1.33333333vw;
+  width: 16.26666667vw;
+  height: 7.73333333vw;
+  background-color: skyblue;
+}
+header .top .right {
+  display: flex;
+  align-items: center;
+}
+header .top .right .one i {
+  line-height: 9.33333333vw;
+  font-size: 6.13333333vw;
+  color: #999;
+}
+header .top .right .two {
+  margin-left: 6.66666667vw;
+}
+header .top .right .two img {
+  margin-top: 1.6vw;
+  width: 6.4vw;
+  height: 6.4vw;
+}
+header .top .right .three {
+  margin-left: 6.66666667vw;
+}
+header .top .right .three img {
+  margin-top: 1.6vw;
+  width: 19.2vw;
+  height: 6.4vw;
+}
+header .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+header .bottom ul {
+  display: flex;
+}
+header .bottom ul li {
+  width: 17.33333333vw;
+  height: 10.13333333vw;
+  padding: 0 4.26666667vw;
+  font-size: 3.73333333vw;
+  text-align: center;
+}
+header .bottom ul li a {
+  height: 10.13333333vw;
+  color: #333;
+  display: block;
+  line-height: 10.13333333vw;
+}
+header .bottom ul li a.pink {
+  color: #fb7299;
+  border-bottom: #fb7299 0.53333333vw solid;
+}
+header .bottom .more {
+  width: 10.66666667vw;
+  height: 10.66666667vw;
+  text-align: center;
+  line-height: 10.66666667vw;
+  margin-right: 1.33333333vw;
+}
+header .bottom .more i {
+  font-size: 5.86666667vw;
+  font-weight: 700;
+  color: #ccc;
+}
+section {
+  padding: 22.4vw 1.33333333vw 0;
+}
+section .list1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+section .list1 a {
+  width: 50%;
+  padding: 2.13333333vw 1.33333333vw;
+  font-size: 3.2vw;
+  color: #333;
+}
+section .list1 a .txt {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-top: 1.33333333vw;
+}
+section .list1 a .pic {
+  position: relative;
+}
+section .list1 a .pic .count {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 2.13333333vw;
+}
+section .list1 a .pic .count p {
+  color: #fff;
+}
+section .list1 a .pic .count p i {
+  vertical-align: middle;
+}
+.dibu {
+  position: relative;
+  width: 100%;
+}
+.dibu .pinkbox {
+  position: fixed;
+  left: 0;
+  bottom: 8vw;
+  width: 95%;
+  height: 8vw;
+  background-color: #fb7299;
+  border-radius: 4vw;
+  margin-left: 2.66666667vw;
+  text-align: center;
+  line-height: 8vw;
+}
+.dibu .pinkbox a {
+  color: #fff;
+  font-size: 3.73333333vw;
+}
